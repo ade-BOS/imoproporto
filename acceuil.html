@@ -1,0 +1,153 @@
+<Doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<style type="text/css">
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+body {
+color:black;
+background-color:white;
+background-image:url();
+margin:0;
+}
+.nom{
+	font-weight: bold;
+	color:blue;
+}
+table{
+	border-spacing: 25px;
+}
+</style>
+	</head>
+	<body>
+		 <div class="topnav">
+  <a class="active" href="">Acceuille</a>
+  <a href="annonce.php?page=0">Annonce</a>
+  <a href="demmade.php?page=0">Demmands</a>
+  <a href="manage_connection.php">Connection</a>
+</div> 
+<h1><center>IMOPROPORTO</center></h1>
+<p><center> <span class = "nom">IMOPROPORTO</span> est une plate forme de mise en relation entre les different acteur du secteur immobilier.<br>
+	Poster gratuitement vos logement ou vos demande de logement des internaute intèresser ne tarderons pas a vous contacter dans de bref delais.<br>
+	<span class="nom"> IMOPROPORTO</span> vous propose un systeme de messagerie pour vous permettre de discuter les terme du contrat avant votre visite sur le site.</center></p>
+	</body>
+	<center><table>
+		<caption><center><h2>Recherche rapide</h2></center></caption>
+		<tr>
+		<td>
+		<table><form method="POST" action="annonce.php?page=1">
+		<caption><h3><center>Annonces</center></h3></caption>
+		<tr>
+			<td>
+				<label>Achat</label><input type="radio" name="choix">
+			</td>
+			<td>
+				<label>Location</label><input type="radio" name ="choix">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label>Quatier</label>
+				<select name="quatier">
+					<option>PK10</option>
+				</select>
+			</td>
+			<td>
+				<label>Type</label>
+				<select name="type">
+					<option>Appartement</option>
+					<option>Maison</option>
+					<option>Terrain</option>
+					<option>Local Commercial</option>
+					<option>Immeuble</option>
+					<option>Boutique</option>
+					<option>Bureau</option>
+					<option>Ferme</option>
+					<option>Autres</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label>Superficie</label><input type="number" name="superficie"><label>m<sup>2</sup></label>
+			</td>
+			<td>
+				<label>Prix mensuel/vente</label><input type="text" name="prix"><label>FCFA</label>
+			</td>
+		</tr>
+		<tr>
+			<td><input type="reset"> </td>
+			<td><input type="submit"> </td>
+		</tr></form>
+	</table>
+		<table><form method="POST" action="demmade.php?page=1">
+		<caption><h3><center>Demandes</center></h3></caption>
+		<tr>
+			<td>
+				<label>Achat</label><input type="radio" name="choix1">
+			</td>
+			<td>
+				<label>Location</label><input type="radio" name ="choix1">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label>Quatier</label>
+				<select name="quatier">
+					<option>PK10</option>
+				</select>
+			</td>
+			<td>
+				<label>Type</label>
+				<select name="type">
+					<option>Appartement</option>
+					<option>Maison</option>
+					<option>Terrain</option>
+					<option>Local Commercial</option>
+					<option>Immeuble</option>
+					<option>Boutique</option>
+					<option>Bureau</option>
+					<option>Ferme</option>
+					<option>Autres</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label>Superficie</label><input type="number" name="superficie"><label>m<sup>2</sup></label>
+			</td>
+			<td>
+				<label>Prix mensuel/vente</label><input type="text" name="prix"><label>FCFA</label>
+			</td>
+		</tr>
+		<tr>
+			<td><input type="reset"> </td>
+			<td><input type="submit"> </td>
+		</tr>
+
+	</form></table></td>
+</tr>
+</table>
+</center></html>

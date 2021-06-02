@@ -1,0 +1,86 @@
+<Doctype html>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<center><h1>Ajouter une Demmand<h1></center>
+	<center><form enctype="multipart/form-data" action="add_demand.php" method="post"><table>
+		<tr>
+			<td><label>Location: </label><input type="radio" name="choix" value="location"></td>
+			<td><label>Vente: </label><input type="radio" name="choix" value="vente"></td>
+		</tr>
+		<tr>
+			<td>
+				<label>Titre: </label>
+			</td>
+			<td>
+				<input type="text" name="titre">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label>Préambule: </label>
+			</td>
+			<td>
+				<input type="textarea" name="preambule">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label>Prix: </label>
+			</td>
+			<td>
+				<input type="number" name="prix">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label>Quatier</label>
+			</td>
+			<td>
+				<select name="quatier">
+					<option>PK10</option>
+				</select>
+			</td>
+			</tr>
+			<tr>
+				<td>
+					<label>Type</label>
+				</td>
+				<td>
+					<select name="type">
+						<option>Appartement</option>
+						<option>Maison</option>
+						<option>Terrain</option>
+						<option>Local Commercial</option>
+						<option>Immeuble</option>
+						<option>Boutique</option>
+						<option>Bureau</option>
+						<option>Ferme</option>
+						<option>Autres</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+			<td>
+				<label>Superficie: </label>
+			</td>
+			<td>
+				<input type="number" name="superficie">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<input type="reset">
+			</td>
+			<td>
+				<input type="submit">
+			</td>
+		</tr>
+	</table></form></center>
+
+</body>
+</html>
